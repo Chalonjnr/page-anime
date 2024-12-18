@@ -57,6 +57,7 @@ main {
     border-radius: 5px;
     font-size: 0.6em;
     font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold; /* Hace el texto en negrita */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     max-width: 68%;
     word-wrap: break-word;
@@ -134,11 +135,11 @@ main {
 
 
 /* Pantallas pequeñas (2 columnas) */
-@media (max-width: 319px){
+@media (max-width: 320px){
     .catalogo {
         grid-template-columns: repeat(2, 1fr); /* 2 columnas */
         gap: 0px 10px; /* Ajuste de espacios */
-        max-width: 400px; /* Limita el ancho máximo del contenedor */
+        max-width: 320px; /* Limita el ancho máximo del contenedor */
         margin: 0 auto; /* Centra el contenedor horizontalmente */
         padding: 10px; /* Añade un poco de espacio interno */
     }
@@ -156,9 +157,9 @@ main {
 
     .anime h4 {
         position: relative;
-        font-size: 1em; /* Reduce el tamaño del texto */
+        font-size: 0.9em; /* Reduce el tamaño del texto */
         bottom: 40px; /* Ajusta la posición del título */
-        max-width: 60%;
+        max-width: 65%;
     }
 
     .anime p {
@@ -189,9 +190,9 @@ main {
 
     .anime h4 {
         position: relative;
-        font-size: 1em; /* Reduce el tamaño del texto */
+        font-size: 0.9em; /* Reduce el tamaño del texto */
         bottom: 40px; /* Ajusta la posición del título */
-        max-width: 60%;
+        max-width: 65%;
     }
 
     .anime p {
@@ -358,7 +359,7 @@ main {
         position: relative;
         font-size: 1.2em; /* Reduce el tamaño del texto */
         bottom: 50px; /* Ajusta la posición del título */
-        max-width: 60%;
+        max-width: 65%;
         text-align: center; /* Centra el texto */
 
     }
