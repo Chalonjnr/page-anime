@@ -1,0 +1,33 @@
+/* ASIDE */
+aside {
+    grid-area: aside;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 0px;
+}
+
+.aside-item:first-child {
+    margin-bottom: 10px; /* Aumenta el margen inferior para separar más el primer bloque */
+    padding: 20px; /* Aumenta el tamaño del primer bloque */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.aside-item:last-child {
+    margin-top: 300px; /* Agrega margen superior para separar más el segundo bloque */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    height: auto; /* Cambia de 0px a auto para que la altura se ajuste según el contenido */
+}
+
+
+@media screen and (min-width: 700px){
+    
+    .otros-animes h5 {
+        margin-bottom: 10px;
+    }
+
+}

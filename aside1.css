@@ -1,0 +1,82 @@
+aside {
+    
+    padding: 0px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    box-sizing: border-box;
+
+}
+
+.redes-sociales h5 {
+    font-size: 18px; /* Tamaño de texto para que sea más destacado */
+    font-weight: bold; /* Mantener la negrita para resaltar */
+    color: #ffcc00; /* Color vibrante similar a un estilo anime (puedes cambiarlo) */
+    
+    text-align: center; /* Centrar el texto */
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    margin: 0 0 15px; /* Espaciado inferior */
+    letter-spacing: 2px; /* Aumenta la separación entre letras para estilo más anime */
+    line-height: 1.5; /* Mantener altura de línea legible */
+    
+    /* Elimina el fondo rectángulo y usa efectos visuales */
+    background: none; /* Elimina el fondo rectangular */
+    
+    /* Sombra fuerte tipo anime */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.844), 0 0 25px rgba(255, 255, 255, 0.8); /* Sombra sutil y resplandor */
+    
+    /* Ajustar el ancho del contenedor */
+    width: fit-content; /* Ajusta el ancho al contenido */
+    max-width: 100%; /* Asegura que el ancho no exceda el 100% */
+    margin-left: auto; /* Centra el contenido horizontalmente */
+    margin-right: auto; /* Centra el contenido horizontalmente */
+    
+    margin-top: 0px;
+    margin-bottom: 20px; /* Espaciado inferior más amplio */
+    
+    /* Tipografía estilo anime */
+    font-family: 'Press Start 2P', sans-serif; /* Fuente pixelada estilo retro anime (puedes usar otras fuentes similares) */
+    letter-spacing: 3px; /* Aumenta la separación entre letras */
+    color: #ff8000; /* Color vibrante, puedes cambiarlo por algo más llamativo */
+}
+
+/* Añadir un emoji al final del texto */
+.redes-sociales h5::after {
+    content: "✨"; /* Un emoji brillante de anime */
+    font-size: 20px; /* Tamaño adecuado para el emoji */
+    margin-left: 10px; /* Espacio entre el texto y el emoji */
+}
+
+/*ajustes adicionales para el container de redes sociales*/
+
+
+.bordered-iframe {
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Para asegurarte de que el contenido no se salga del borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efecto de sombra alrededor del iframe */
+    width: 340px; /* Ajusta el ancho según lo que necesites */
+    height: 140px; /* Ajusta la altura según lo que necesites */
+    object-fit: cover; /* Si deseas recortar el contenido dentro del iframe */
+    margin-top: 0px;
+   justify-content: center;
+}
+
+iframe {
+    border-radius: 15px; /* Bordes redondeados para suavizar el borde */
+    
+}
+
+@media (min-width: 1024px) and (max-width: 2560px){
+
+    iframe {
+        border-radius: 15px; /* Bordes redondeados para suavizar el borde */
+        box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.5); /* Resplandor neón suave */
+        filter: blur(4px); /* Desenfoque borroso inicial */
+        transition: filter 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+        margin-top: 10px;
+    }
+    
+    iframe:hover {
+        filter: blur(0); /* Elimina el desenfoque al pasar el ratón */
+        box-shadow: 0 0 30px 4px rgba(255, 255, 255, 0.771); /* Resplandor suave e incrementado */
+    }
+
+}

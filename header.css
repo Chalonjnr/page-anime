@@ -1,0 +1,153 @@
+
+header {
+    /* Asigna un área de cuadrícula específica para el encabezado */
+    grid-area: header;
+
+    /* Establece un contenedor flexible */
+    display: flex;
+    
+    /* Distribuye los elementos con espacio entre ellos */
+    justify-content: space-between;
+    
+    /* Alinea los elementos verticalmente al centro */
+    align-items: center;
+
+    /* Agrega un relleno de 10px alrededor */
+    padding: 10px;
+    
+    /* Redondea las esquinas del encabezado */
+    border-radius: 0px;
+    
+    /* Aplica una sombra suave al encabezado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    /* Fondo transparente al inicio */
+    background: rgba(0, 0, 0, 0.3); /* Fondo negro con opacidad */
+    
+    /* Establece que se mantenga fijo en la parte superior */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    
+    width: 100%; /* Ancha completa */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    opacity: 1; /* Totalmente visible */
+    transition: opacity 0.3s ease, transform 0.4s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.hidden {
+    opacity: 0; /* Desvanece el header */
+    transform: translateY(-100%); /* Lo mueve fuera de la pantalla */
+}
+
+/* Estilo cuando el header ha sido scrolleado */
+header.scrolled {
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro y opaco */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
+    opacity: 1; /* Totalmente visible */
+    transform: translateY(0); /* Vuelve a su lugar de origen */
+}
+
+
+/* TITLE */
+
+/* Estilo del título */
+header h1 {
+    
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 2em; /* Tamaño más grande para un impacto visual */
+    color: rgb(255, 255, 255); /* Blanco para resaltar */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.992), 
+                 0 0 15px rgba(255, 0, 255, 0.8), 
+                 0 0 30px rgba(0, 255, 255, 0.8); /* Efecto de neón */
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(90deg, rgb(255, 77, 0), rgb(255, 230, 0)); /* Fondo tipo Tokio */
+    border-radius: 5px;
+}
+
+/* Media Queries */
+
+/* Pantallas pequeñas */
+@media (min-width: 320px) and (max-width: 374px) {
+    header h1 {
+        font-size: 1em; 
+        margin-right: 0px;
+    }
+    header{
+        width: 100%;
+        top: 5px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    header h1 {
+        font-size: 1em; 
+        margin-left: 0px;
+    }
+    header{
+        width: 100%;
+        top: 5px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    header h1 {
+        font-size: 1em; 
+        margin-left: 0px;
+    }
+    header{
+        width: 100%;
+        top: 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    header h1 {
+        font-size: 1em; 
+        margin-left: 0px;
+    }
+    header{
+        width: 100%;
+        top: 5px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px){
+    header h1 {
+        font-size: 1em; 
+        margin-left: 0px;
+    }
+    header{
+        width: 100%;
+        top: 5px;
+    }
+}
+
+
+@media (min-width: 1440px) and (max-width: 2559px){
+    header h1 {
+        font-size: 2em; 
+        margin-right: 840px;
+        
+        
+    }
+    header{
+        width: 100%;
+        top: 5px;
+    }
+}
+
+@media (min-width: 2560px) {
+    header h1 {
+        font-size: 1em; 
+        margin-left: 0px;
+    }
+    header{
+        width: 100%;
+        top: 5px;
+    }
+}
+
+

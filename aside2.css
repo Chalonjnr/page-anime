@@ -1,0 +1,297 @@
+.otros-animes h5 {
+    font-size: 16px; /* Tamaño de texto destacado */
+    font-weight: bold; /* Negrita para resaltar */
+    color: #FF007F; /* Rosado neón brillante para el texto */
+    
+    text-align: center; /* Centrar el texto */
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    margin: 0 0 15px; /* Espaciado inferior */
+    letter-spacing: 2px; /* Aumenta la separación entre letras */
+    line-height: 1.5; /* Altura de línea legible */
+    
+    /* Elimina el fondo rectángulo y usa efectos visuales */
+    background: none; /* Elimina el fondo rectangular */
+    
+    /* Sombra tipo anime y gamer en rosado neón */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.847), 0 0 15px rgba(255, 0, 127, 0.7); /* Sombra sutil y resplandor en rosado neón */
+    
+    /* Ajustar el ancho del contenedor */
+    width: fit-content; /* Ajusta el ancho al contenido */
+    max-width: 100%; /* Asegura que el ancho no exceda el 100% */
+    margin-left: auto; /* Centra el contenido horizontalmente */
+    margin-right: auto; /* Centra el contenido horizontalmente */
+    
+    margin-top: -220px;
+    margin-bottom: 20px; /* Espaciado inferior más amplio */
+    
+    /* Tipografía estilo gamer pixelada */
+    font-family: 'Press Start 2P', sans-serif; /* Fuente pixelada estilo retro */
+    letter-spacing: 3px; /* Aumenta la separación entre letras */
+}
+
+/* Añadir el emoji de alien gamer al final del texto */
+.otros-animes h5::after {
+    content: "👾"; /* Emoji de alien pixelado */
+    font-size: 24px; /* Tamaño del emoji más grande */
+    margin-left: 10px; /* Espacio entre el texto y el emoji */
+    color: #FF007F; /* Asegura que el emoji tenga el mismo color rosado neón */
+}
+
+/* contenedor general*/
+
+.otros-animes {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Espacio entre los elementos */
+    padding: 0px;
+}
+
+/* Contenedor general de las tarjetas */
+.more-anime {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta las columnas automáticamente */
+    gap: 0px; /* Espacio entre elementos */
+    justify-content: center;
+}
+
+/* Tarjeta de anime/película */
+.more-anime a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%; /* Cada tarjeta ocupa todo el ancho */
+    max-width: 400px; /* Limita el ancho máximo */
+    background-color: #000000a3;
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid transparent; /* Borde inicial */
+    border-radius: 0px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que el contenido se desborde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.more-anime a:hover {
+    transform: scale(1.02); /* Efecto de escala al pasar el ratón */
+    border-color: rgba(255, 77, 77, 0.8); /* Borde al hacer hover */
+}
+
+/* Imagen a la izquierda */
+.more-anime img {
+    width: 180px; /* Tamaño fijo para la imagen */
+    height: auto;
+    object-fit: cover;
+    border-radius: 0px 0 0 0px; /* Bordes redondeados solo a la izquierda */
+}
+
+/* Contenedor del texto */
+.more-anime div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px; /* Espaciado entre h4 y p */
+}
+
+/* Título del contenido */
+.more-anime h4 {
+    font-size: 1.4em;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    text-align: start;
+}
+
+/* Tipo de contenido */
+.more-anime p {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Diferenciar Anime y Película */
+.more-anime p.anime {
+    color: #007bff; /* Azul para anime */
+    border-left: 10px solid #007bff;
+    padding-left: 50px;
+    text-align: start;
+}
+
+.more-anime p.pelicula {
+    color: #ff5733; /* Naranja para película */
+    border-left: 10px solid #ff5733;
+    padding-left: 50px;
+    text-align: start;
+}
+
+/* Superposición de "Descargar" */
+.more-anime h3 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.738);
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 1em;
+    border-radius: 0px; /* Bordes redondeados en forma de píldora */
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.more-anime h3:hover {
+    background-color: rgba(255, 77, 77, 0.9); /* Cambia el fondo al pasar el ratón */
+}
+
+
+@media screen and (min-width: 700px) {
+    .more-anime p.anime,
+    .more-anime p.pelicula {
+        padding-top: 2px; /* Reduce el padding superior */
+        padding-bottom: 2px; /* Reduce el padding inferior */
+        line-height: 1; /* Ajusta la altura de línea */
+        border-left-width: 5px; /* Grosor de la tira ajustado */
+        height: auto; /* Ajusta automáticamente la altura al contenido */
+    }
+    .more-anime p.pelicula {
+        margin-right: 40px;
+    }
+}
+
+
+@media (max-width: 374px) {
+    .more-anime img {
+        width: 120px; /* Ajusta la imagen a pantallas muy pequeñas */
+    }
+
+    .more-anime div {
+        padding: 10px;
+    }
+
+    .otros-animes h5 {
+        font-size: 12px; /* Reduce el tamaño del título */
+        letter-spacing: 1px;
+    }
+
+    .more-anime h3 {
+        font-size: 0.8em;
+        right: 10px; /* Ajusta la posición */
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .more-anime img {
+        width: 140px;
+    }
+
+    .otros-animes h5 {
+        font-size: 14px;
+    }
+
+    .more-anime h3 {
+        font-size: 0.9em;
+        right: 20px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .more-anime {
+        gap: 10px; /* Aumenta el espacio entre las tarjetas */
+    }
+
+    .more-anime a {
+        max-width: 100%; /* Tarjetas ocupan todo el ancho */
+    }
+
+    .more-anime img {
+        width: 180px; /* Imágenes ligeramente más grandes */
+    }
+
+    .otros-animes h5 {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .more-anime {
+        gap: 15px;
+    }
+
+    .more-anime a {
+        max-width: 300px; /* Tarjetas más compactas */
+    }
+
+    .otros-animes h5 {
+        font-size: 18px;
+    }
+
+    .more-anime img {
+        width: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .more-anime {
+        gap: 20px;
+    }
+
+    .more-anime a {
+        max-width: 400px;
+    }
+
+    .otros-animes h5 {
+        font-size: 20px;
+    }
+
+    .more-anime h3 {
+        font-size: 1em;
+        right: 10%;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .more-anime{
+        margin-right: 10px;
+        gap: 3px; 
+    }
+
+    .more-anime img{
+        max-width: 180px;
+        
+    }
+
+    .more-anime a {
+        max-width: 450px; /* Tarjetas más grandes */
+    }
+
+    .otros-animes h5 {
+        font-size: 18px; /* Resalta más el título */
+    }
+
+    .more-anime h3{
+        right: 240px;
+    }
+    
+    .more-anime h4{
+        font-size: 1em;
+    }
+   
+}
+
+@media (min-width: 2560px) {
+    .otros-animes h5 {
+        font-size: 28px; /* Optimización para pantallas ultra grandes */
+    }
+
+    .more-anime a {
+        max-width: 600px;
+    }
+
+    .more-anime img {
+        width: 250px;
+    }
+}

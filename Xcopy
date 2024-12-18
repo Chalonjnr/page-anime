@@ -1,0 +1,31 @@
+/* Media Queries */
+
+/* Pantallas pequeñas */
+@media (min-width: 320px) and (max-width: 374px) {
+   
+}
+@media (min-width: 375px) and (max-width: 424px) {
+    
+}
+/* Pantallas medianas */
+@media (min-width: 425px) and (max-width: 767px) {
+    
+}
+
+/* Pantallas grandes */
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+}
+
+/* Pantallas extra grandes */
+@media (min-width: 1024px) and (max-width: 1439px){
+    
+}
+
+@media (min-width: 1440px) and (max-width: 2559px){
+   
+}
+
+@media (min-width: 2560px) {
+    
+}

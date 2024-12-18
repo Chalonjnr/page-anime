@@ -1,0 +1,274 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Evita scroll horizontal en el cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Asegura que no haya desplazamiento horizontal */
+}
+
+/* Contenedor de la estructura de la página */
+html, body {
+    height: 100%; /* Asegura que el HTML y body ocupen toda la altura */
+    margin: 0;
+    background-color: black;
+}
+
+.layout {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 80fr 20fr;
+    grid-template-rows: auto 1fr auto;
+    padding: 5px;
+    gap: 5px; /* Elimina el espacio entre elementos */
+    width: 100vw; /* Asegura el ancho completo de la ventana */
+    height: 100vh; /* Asegura la altura completa de la ventana */
+}
+
+/* Estilo general del encabezado */
+header {
+    grid-area: header;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* ASIDE */
+aside {
+    grid-area: aside;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+.aside-item:first-child {
+    margin-bottom: 10px;
+    padding: 10px; /* Aumenta el tamaño del primer bloque */
+    border-radius: 0px;
+    text-align: center;
+    height: 150px; /* Aumenta la altura del segundo bloque */
+}
+
+.aside-item:last-child {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 0px;
+    text-align: center;
+    height: 150px; /* Aumenta la altura del segundo bloque */
+}
+
+
+main {
+    
+    grid-area: main;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 1.2rem;
+    
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Media Queries */
+/* Pantallas pequeñas */
+@media screen and (min-width: 700px){
+    .layout {
+        grid-template-areas: 
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+    }
+    
+    header, main, aside, footer {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    
+    main{
+        margin-top:63px;
+    }
+
+}
+
+@media (max-width: 320px) and (max-width: 374px) {
+    .layout {
+        grid-template-areas: 
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+    }
+    header, main, aside, footer {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    main{
+        margin-top: 56px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .layout {
+        grid-template-areas: 
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+    }
+    header, main, aside, footer {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    main{
+        margin-top: 56px;
+    }
+}
+
+/* Pantallas medianas */
+@media (min-width: 425px) and (max-width: 767px) {
+    .layout {
+        grid-template-areas: 
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+    }
+    header, main, aside, footer {
+        padding: 15px;
+    }
+    main{
+        margin-top: 56px;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .layout {
+        grid-template-areas: 
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+    }
+    header, main, aside, footer {
+        padding: 20px;
+    }
+    main{
+        margin-top: 56px;
+    };
+}
+
+/* Pantallas extra grandes */
+@media (min-width: 1024px) and (max-width: 1439px){
+    .layout {
+        grid-template-areas: 
+            "header"
+            "main"
+            "aside"
+            "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto auto;
+    }
+    main{
+        margin-top: 56px;
+    };
+}
+
+@media (min-width: 1440px) and (max-width: 2559px){
+    .layout {
+        grid-template-areas: 
+            "header header"
+            "main aside"
+            "footer footer";
+        grid-template-columns: 80fr 20fr;
+    }
+    main, aside{
+        margin-top: 70px;
+    };
+    
+}
+
+@media (min-width: 2560px) {
+    .layout {
+        grid-template-areas: 
+            "header header"
+            "main aside"
+            "footer footer";
+        grid-template-columns: 80fr 20fr;
+    }
+    main,aside{
+        margin-top: 56px;
+    }
+}
+
+body{
+    background-color: #121212;
+}
+
+/* Fondo estilo nocturno sutil con animación suave en tonos oscuros */
+header, main, aside, footer {
+    background-color: #1b2a49; /* Azul oscuro base */
+    background-image: linear-gradient(135deg, rgba(155, 45, 32, 0.3), rgba(214, 77, 42, 0.3), rgba(90, 31, 121, 0.3)); /* Degradado en tonos rojos oscuros, naranja quemado y morado profundo */
+    background-size: 300% 300%; /* Aumentamos el tamaño para un movimiento más suave */
+    animation: gradientAnimation 5s ease infinite; /* Animación suave */
+}
+
+/* Animación del gradiente */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header, main, aside, footer {
+    background-color: #1b2a49; /* Fondo base oscuro para el header */
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem; /* Tamaño de texto moderado */
+    box-shadow: 0 4px 12px rgba(155, 45, 32, 0.2); /* Sombra suave en tonos rojos oscuros */
+    transition: background-color 0.3s ease-in-out; /* Transición suave en el color del fondo */
+}
+
+
+
