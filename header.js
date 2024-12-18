@@ -1,28 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('header');
-    let lastScrollY = window.scrollY; // Última posición de scroll
-    let isScrollingUp = false; // Determina si el scroll es hacia arriba
+let lastScrollY = 0; // Variable para almacenar la posición del scroll anterior
+const header = document.querySelector('header'); // Selecciona el header
 
-    window.addEventListener('scroll', () => {
-        const currentScrollY = window.scrollY;
+window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY; // Obtén la posición actual del scroll
 
-        // Mostrar o esconder el header al hacer scroll
-        if (currentScrollY > lastScrollY) {
-            // Si el scroll va hacia abajo, oculta el header
-            header.classList.add('hidden');
-        } else {
-            // Si el scroll va hacia arriba, muestra el header
-            header.classList.remove('hidden');
-        }
+    if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        // Scroll hacia abajo y supera los 50px
+        header.classList.add('hidden');
+    } else {
+        // Scroll hacia arriba
+        header.classList.remove('hidden');
+    }
 
-        // Cambiar el estilo del header cuando se hace scroll
-        if (currentScrollY > 50) {
-            header.classList.add('scrolled'); // Aplica el estilo "scrolled" al header
-        } else {
-            header.classList.remove('scrolled'); // Remueve el estilo cuando el scroll es pequeño
-        }
+    // Si el scroll supera 100px, activa la clase 'scrolled'
+    if (currentScrollY > 100) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
 
-        // Actualiza la última posición del scroll
-        lastScrollY = currentScrollY;
-    });
+    lastScrollY = currentScrollY; // Actualiza la posición del scroll
 });

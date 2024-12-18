@@ -209,7 +209,7 @@
 /* Pantallas pequeñas */
 @media (min-width: 320px) and (max-width: 374px) {
     .menu-container {
-        margin-top: 0px;
+        margin-top: 5px;
         margin-left: 0px;
     }
     .hamburger {
@@ -217,12 +217,12 @@
         height: 30px;
     }
     .hamburger span {
-        height: 5px;
+        height: 6px;
         
     }
     .menu {
-        width: 300px;
-        top: 55px;
+        width: 368px;
+        top: 48px;
         left: 0px; 
 
     }
@@ -230,7 +230,7 @@
 
 @media (min-width: 375px) and (max-width: 424px) {
     .menu-container {
-        margin-top: 0px;
+        margin-top: 5px;
         margin-left: 0px;
     }
     .hamburger {
@@ -238,10 +238,10 @@
         height: 30px;
     }
     .hamburger span {
-        height: 5px;
+        height: 6px;
     }
     .menu {
-        width: 350px;
+        width: 360px;
         top: 50px;
         left: 5px;
     }
@@ -249,7 +249,7 @@
 
 @media (min-width: 425px) and (max-width: 767px) {
     .menu-container {
-        margin-top: 0px;
+        margin-top: 10px;
         margin-left: 0px;
     }
     .hamburger {
@@ -257,10 +257,10 @@
         height: 30px;
     }
     .hamburger span {
-        height: 5px;
+        height: 6px;
     }
     .menu {
-        width: 400px;
+        width: 395px;
         top: 50px;
         left: 5px;
     }
@@ -276,18 +276,18 @@
         height: 30px;
     }
     .hamburger span {
-        height: 5px;
+        height: 6px;
     }
     .menu {
         width: 500px;
-        top: 50px;
+        top: 60px;
         left: 5px;
     }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px){
     .menu-container {
-        margin-top: 0px;
+        margin-top: 5px;
         margin-left: 0px;
     }
     .hamburger {
@@ -311,16 +311,16 @@
         margin-left: 0px;
     }
     .hamburger {
-        width: 30px;
-        height: 30px;
+        width: 45px;
+        height: 35px;
     }
     .hamburger span {
-        height: 5px;
+        height: 8px;
     }
     .menu {
-        width: 650px;
-        top: 60px;
-        left: 10px;
+        width: 645px;
+        top: 70px;
+        left: 5px;
     }
 }
 
@@ -330,16 +330,16 @@
         margin-left: 0px;
     }
     .hamburger {
-        width: 30px;
-        height: 30px;
+        width: 45px;
+        height: 35px;
     }
     .hamburger span {
-        height: 5px;
+        height: 8px;
     }
     .menu {
-        width: 1000px;
-        top: 50px;
-        left: 10px;
+        width: 800px;
+        top: 70px;
+        left: 5px;
     }
 }
 

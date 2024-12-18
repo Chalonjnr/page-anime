@@ -33,19 +33,18 @@ header {
     z-index: 1000; /* Asegura que esté encima de otros elementos */
     opacity: 1; /* Totalmente visible */
     transition: opacity 0.3s ease, transform 0.4s ease, background 0.3s ease, box-shadow 0.3s ease;
+    margin-top: -5px;
 }
 
 header.hidden {
-    opacity: 0; /* Desvanece el header */
-    transform: translateY(-100%); /* Lo mueve fuera de la pantalla */
+    opacity: 0; /* Totalmente invisible */
+    transform: translateY(-100%); /* Fuera de la pantalla */
+    pointer-events: none; /* Evita que interfiera con el contenido mientras está oculto */
 }
 
-/* Estilo cuando el header ha sido scrolleado */
 header.scrolled {
-    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro y opaco */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
-    opacity: 1; /* Totalmente visible */
-    transform: translateY(0); /* Vuelve a su lugar de origen */
+    background: rgba(0, 0, 0, 0.9); /* Fondo oscuro al scrollear */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra destacada */
 }
 
 
@@ -69,11 +68,23 @@ header h1 {
 
 /* Media Queries */
 
+@media screen and (min-width: 700px)  {
+    header h1 {
+        font-size: 1.8em; 
+        margin-right: 0px;
+    }
+    header{
+        width: 100%;
+        top: 10px;
+    }
+}
+
 /* Pantallas pequeñas */
 @media (min-width: 320px) and (max-width: 374px) {
     header h1 {
-        font-size: 1em; 
+        font-size: 1.5em; 
         margin-right: 0px;
+        margin-top: 5px;
     }
     header{
         width: 100%;
@@ -83,8 +94,10 @@ header h1 {
 
 @media (min-width: 375px) and (max-width: 424px) {
     header h1 {
-        font-size: 1em; 
-        margin-left: 0px;
+        font-size: 1.5em; 
+        margin-right: 0px;
+        
+        
     }
     header{
         width: 100%;
@@ -94,8 +107,10 @@ header h1 {
 
 @media (min-width: 425px) and (max-width: 767px) {
     header h1 {
-        font-size: 1em; 
-        margin-left: 0px;
+        font-size: 1.5em; 
+        margin-right: 0px;
+        margin-top: 5px;
+       
     }
     header{
         width: 100%;
@@ -105,8 +120,8 @@ header h1 {
 
 @media (min-width: 768px) and (max-width: 1023px) {
     header h1 {
-        font-size: 1em; 
-        margin-left: 0px;
+        font-size: 1.8em; 
+        margin-right: 0px;
     }
     header{
         width: 100%;
@@ -116,22 +131,24 @@ header h1 {
 
 @media (min-width: 1024px) and (max-width: 1439px){
     header h1 {
-        font-size: 1em; 
+        font-size: 2em; 
         margin-left: 0px;
+        margin-top: 0px;
     }
     header{
         width: 100%;
         top: 5px;
+        
     }
 }
 
 
 @media (min-width: 1440px) and (max-width: 2559px){
     header h1 {
-        font-size: 2em; 
-        margin-right: 840px;
+        font-size: 3em; 
+        margin-right: 0px;
         
-        
+
     }
     header{
         width: 100%;
@@ -141,13 +158,15 @@ header h1 {
 
 @media (min-width: 2560px) {
     header h1 {
-        font-size: 1em; 
-        margin-left: 0px;
+        font-size: 3em;     
+        margin-top: -5px;
     }
     header{
+        
         width: 100%;
         top: 5px;
     }
 }
+
 
 

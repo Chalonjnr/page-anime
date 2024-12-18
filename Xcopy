@@ -29,3 +29,258 @@
 @media (min-width: 2560px) {
     
 }
+
+
+
+/* Pantallas pequeñas (2 columnas) */
+@media (max-width: 319px){
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        gap: 0px 10px; /* Ajuste de espacios */
+        max-width: 400px; /* Limita el ancho máximo del contenedor */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        padding: 10px; /* Añade un poco de espacio interno */
+    }
+
+    .anime {
+        max-width: 100%; /* Asegura que las tarjetas se ajusten al nuevo contenedor */
+        height: auto;   
+    }
+
+     
+    .anime img {
+        height: 240px; /* Reduce ligeramente la altura de las imágenes */
+        object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    }
+
+    .anime h4 {
+        position: relative;
+        font-size: 1em; /* Reduce el tamaño del texto */
+        bottom: 40px; /* Ajusta la posición del título */
+        max-width: 60%;
+    }
+
+    .anime p {
+        
+        font-size: 1em; /* Reduce el tamaño del texto del párrafo */
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        gap: 0px 10px; /* Ajuste de espacios */
+        max-width: 1400px; /* Limita el ancho máximo del contenedor */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        padding: 10px; /* Añade un poco de espacio interno */
+    }
+
+    .anime {
+        max-width: 100%; /* Asegura que las tarjetas se ajusten al nuevo contenedor */
+        height: auto;   
+    }
+
+     
+    .anime img {
+        height: 240px; /* Reduce ligeramente la altura de las imágenes */
+        object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    }
+
+    .anime h4 {
+        position: relative;
+        font-size: 1em; /* Reduce el tamaño del texto */
+        bottom: 40px; /* Ajusta la posición del título */
+        max-width: 60%;
+    }
+
+    .anime p {
+        
+        font-size: 1em; /* Reduce el tamaño del texto del párrafo */
+    }
+}
+
+/* Pantallas pequeñas a medianas (2 columnas) */
+@media (min-width: 375px) and (max-width: 424px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        gap: 0px 10px; /* Ajuste de espacios */
+        max-width: 1800px; /* Limita el ancho máximo del contenedor */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        padding: 10px; /* Añade un poco de espacio interno */
+    }
+
+    .anime {
+        max-width: 100%; /* Asegura que las tarjetas se ajusten al nuevo contenedor */
+        height: auto; 
+    }
+ 
+    .anime img {
+        height: 240px; /* Reduce ligeramente la altura de las imágenes */
+        object-fit: contain; /* Mantiene la proporción y recorta si es necesario */
+    }
+
+    .anime h4 {
+        position: relative;
+        font-size: 1em; /* Reduce el tamaño del texto */
+        bottom: 40px; /* Ajusta la posición del título */
+        max-width: 60%;
+    }
+
+    .anime p {
+    
+        font-size: 1em; /* Reduce el tamaño del texto del párrafo */
+    }
+}
+
+/* Pantallas medianas (2 columnas) */
+@media (min-width: 425px) and (max-width: 767px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        gap: 0px 10px; /* Ajuste de espacios */
+        max-width: 1800px; /* Limita el ancho máximo del contenedor */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        padding: 10px; /* Añade un poco de espacio interno */
+    }
+
+    .anime {
+        max-width: 100%; /* Asegura que las tarjetas se ajusten al nuevo contenedor */
+        height: auto;   
+    }
+
+    .anime img {
+        height: 270px; /* Reduce ligeramente la altura de las imágenes */
+        object-fit: contain; /* Mantiene la proporción y recorta si es necesario */
+    }
+
+    .anime h4 {
+        position: relative;
+        font-size: 1em; /* Reduce el tamaño del texto */
+        bottom: 40px; /* Ajusta la posición del título */
+        max-width: 55%;
+    }
+
+    .anime p {
+        
+        font-size: 1em; /* Reduce el tamaño del texto del párrafo */
+    }
+}
+
+/* Pantallas grandes (3 columnas) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .catalogo {
+        grid-template-columns: repeat(3, 1fr); /* 2 columnas */
+        gap: 0px 10px; /* Ajuste de espacios */
+        max-width: 1600px; /* Limita el ancho máximo del contenedor */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        padding: 10px; /* Añade un poco de espacio interno */
+    }
+
+    .anime {
+        max-width: 100%; /* Asegura que las tarjetas se ajusten al nuevo contenedor */
+        height: auto;
+    }
+
+    .anime img {
+        
+        height: 340px; /* Reduce ligeramente la altura de las imágenes */
+        object-fit: contain; /* Mantiene la proporción y recorta si es necesario */  
+    } 
+
+    .anime h4 {
+        position: relative;
+        font-size: 1.3em; /* Reduce el tamaño del texto */
+        bottom: 50px; /* Ajusta la posición del título */
+        max-width: 55%;   
+   }
+
+    .anime p {
+        font-size: 1.3em; /* Reduce el tamaño del texto del párrafo */
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .catalogo {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+        gap: 0px 10px; /* Ajuste de espacios */
+        max-width: 1600px; /* Limita el ancho máximo del contenedor */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        padding: 10px; /* Añade un poco de espacio interno */
+    }
+
+    .anime {
+        max-width: 100%; /* Asegura que las tarjetas se ajusten al nuevo contenedor */
+        height: auto;   
+    }
+
+    .anime img {
+        height: 340px; /* Reduce ligeramente la altura de las imágenes */
+        object-fit: contain; /* Mantiene la proporción y recorta si es necesario */
+    }
+
+    .anime h4 {
+        position: relative;
+        font-size: 1.3em; /* Reduce el tamaño del texto */
+        bottom: 50px; /* Ajusta la posición del título */
+        max-width: 55%; /* Ajusta el tamaño del título */
+        text-align: center; /* Centra el texto */
+    }
+    .anime p {
+        
+        font-size: 1.3em; /* Reduce el tamaño del texto del párrafo */
+    }
+}
+
+/* Pantallas ultra grandes (5 columnas) */
+@media (min-width: 1440px) and (max-width: 2559px) {
+    .catalogo {
+
+        grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+        gap: 0px 10px; /* Reduce el espacio entre elementos */
+        max-width: 1800px; /* Limita el ancho máximo del contenedor */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        padding: 10px; /* Añade un poco de espacio interno */
+        
+    }
+
+    .anime {
+        max-width: 100%; /* Asegura que las tarjetas se ajusten al nuevo contenedor */
+        height: auto;
+    }
+
+    .anime img {
+        height: 296px; /* Reduce ligeramente la altura de las imágenes */
+        object-fit: contain; /* Mantiene la proporción y recorta si es necesario */
+    }
+
+    .anime h4 {
+        position: relative;
+        font-size: 1.2em; /* Reduce el tamaño del texto */
+        bottom: 50px; /* Ajusta la posición del título */
+        max-width: 65%;
+        text-align: center; /* Centra el texto */
+
+    }
+
+    .anime p {
+        font-size: 1.3em;
+    }
+}
+
+/* Pantallas ultra grandes (5 columnas) */
+@media (min-width: 2560px) {
+    .catalogo {
+        grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+        gap: 30px 40px;
+    }
+
+    .anime {
+        max-width: 240px;
+        height: auto;
+    }
+
+    .anime img {
+        height: 280px;
+        object-fit: cover;
+    }
+}
+
